@@ -15,7 +15,7 @@ class String
   end
 
   def count_sentences
-    array = self.strip.split(/\b(.|?|!)\b/)
+    array = self.strip.split(/(\.|\?|\!)/)
     number_of_sentences = 0
     
     array.each do |sentence|
