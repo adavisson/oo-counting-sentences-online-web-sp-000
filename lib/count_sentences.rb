@@ -19,7 +19,7 @@ class String
     number_of_sentences = 0
     
     array.each do |sentence|
-      if sentence != "." && sentence != "?" && sentence != "!"
+      if sentence != "." && sentence != "?" && sentence != "!" && sentence.length > 0
         number_of_sentences += 1
       end
     end
